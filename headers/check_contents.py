@@ -9,7 +9,7 @@ def check(hostname, headers, warn):
 
     if 'Server' in headers:
         value = headers['Server']
-        if re.match('Apache\/[0-9].+', value) or re.match('nginx\/[0-9].+', value) or re.match('Microsoft IIS\/[0-9].+', value):
+        if re.match(r'Apache\/[0-9].+', value) or re.match(r'nginx\/[0-9].+', value) or re.match(r'Microsoft IIS\/[0-9].+', value):
             print('[\033[93m WARN \033[0m] The Server header contains the value "' + value + '" on:', hostname)
             warn = True
 

@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 import argparse
 import sys
 
-print('''
+print(r'''
  ______  _               _             
 (_____ \| |             | |            
  _____) ) |__  _   _  __| | ___  ____  
